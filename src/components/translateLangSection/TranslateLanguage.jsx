@@ -1,11 +1,10 @@
-import { lazy, Suspense } from 'react';
 import SelectedLanguage from '../SelectedLanguage';
 import TranslateTextareaSkeleton from '../skeletons/TranslateTextareaSkeleton';
-import { motion } from 'motion/react';
 import RandomSelectIcon from '../../assets/image/Horizontal_top_left_main.svg';
 import { setRandomSelectionLang } from '../../store/slices/languagesSlice';
 import { useDispatch } from 'react-redux';
-
+import { lazy, Suspense } from 'react';
+import { motion } from 'motion/react';
 const TranslateTextarea = lazy(() => import('./translateTextarea'));
 
 const TranslateLanguage = () => {

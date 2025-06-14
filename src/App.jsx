@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import './App.css';
 import logo from './assets/image/logo.svg';
 import BackgroundImage from './components/BackgroundImage';
