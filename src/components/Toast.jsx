@@ -1,6 +1,11 @@
 // components/Toast.js
 import { AnimatePresence, motion } from 'framer-motion';
-import { CheckCircle, XCircle, Info, AlertTriangle } from 'lucide-react';
+import {
+  FaCheckCircle,
+  FaTimesCircle,
+  FaInfoCircle,
+  FaExclamationTriangle,
+} from 'react-icons/fa';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { clearToast } from '../store/slices/toastSlice';
@@ -8,19 +13,23 @@ import { clearToast } from '../store/slices/toastSlice';
 const toastColors = {
   success: {
     bg: 'bg-green-600',
-    icon: <CheckCircle className='w-5 h-5 text-white' />,
+    icon: <FaCheckCircle className='size-5 text-white' />,
+    // emoji: <span>✅</span>,
   },
   error: {
     bg: 'bg-red-600',
-    icon: <XCircle className='w-5 h-5 text-white' />,
+    icon: <FaTimesCircle className='w-5 h-5 text-white' />,
+    // emoji: <span>❌</span>,
   },
   info: {
     bg: 'bg-blue-600',
-    icon: <Info className='w-5 h-5 text-white' />,
+    icon: <FaInfoCircle className='w-5 h-5 text-white' />,
+    // emoji: <span>ℹ️</span>,
   },
   warning: {
     bg: 'bg-yellow-500 text-black',
-    icon: <AlertTriangle className='w-5 h-5 text-black' />,
+    icon: <FaExclamationTriangle className='w-5 h-5 text-black' />,
+    // emoji: <span>⚠️</span>,
   },
 };
 
