@@ -5,7 +5,7 @@ import { setRandomSelectionLang } from '../../store/slices/languagesSlice';
 import { useDispatch } from 'react-redux';
 import { lazy, Suspense } from 'react';
 import { motion } from 'motion/react';
-const TranslateTextarea = lazy(() => import('./translateTextarea'));
+const TranslateTextarea = lazy(() => import('./TranslateTextarea'));
 
 const TranslateLanguage = () => {
   // const {} useSelector((state) => state.langs);
